@@ -1,4 +1,4 @@
 # Problem-Solving
-## Baekjoon Online Judge
-## Algospot
-## Programmers
+1. Baekjoon Online Judge
+2. Algospot
+3. Programmers
