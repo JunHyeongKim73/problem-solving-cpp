@@ -20,7 +20,7 @@ bool bitCheck(int state, int i){ // state의 i번째 bit가 1이면 true, 0이�
 
 int DFS(int start, int state){
 	if(state == (1<<N)-1) return adj[start][0];
-	if(cache[start][state] != MAX) return cache[start][state];
+	if(cache[start][state] != MAX) return cache[start][state]; // cache[start][state]의 값이 존재한다면
 	
 	for(int i=0; i<N; i++){
 		if(bitCheck(state, i)) continue; // state의 i번째 bit가 1이면 continue
@@ -43,8 +43,8 @@ int main(){
 			adj[i].push_back(weight);
 		}
 	
-	fill(&cache[0][0], &cache[N-1][1<<N], MAX);
-	int first = 1;
+	fill(&cache[0][0], &cache[N-1][1<<N], MAX); // cache의 모든 값을 MAX로 채운다
+	int first = 1; // 초기 state의 값은 1
 	int mins = DFS(0, first);
 	
 	printf("%d \n", mins);
