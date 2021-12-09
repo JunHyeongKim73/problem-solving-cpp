@@ -1,0 +1,2 @@
+language = "cpp"
+run = "g++ -o test 1005.cpp"
