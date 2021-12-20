@@ -1,2 +1,2 @@
 language = "cpp"
-run = "g++ -o result BOJ/5052.cpp && ./result"
+run = "g++ -o result CF_2.cpp && ./result"
