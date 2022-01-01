@@ -1,10 +1,4 @@
-#include <cstdio>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <deque>
-#include <numeric>
-#include <cmath>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -25,9 +19,8 @@ void solve() {
 	}
 
 	int num = 0;
-	for(int i=n-2*k; i<n; i++) {
-		ans += (v[i] / v[n-num]);
-		num++;
+	for(int i=0; i<k; i++) {
+		ans += (v[n-2*k + i] / v[n-k + i]);
 	}
 
 	printf("%d\n", ans);
